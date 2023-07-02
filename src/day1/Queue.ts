@@ -38,6 +38,10 @@ export default class Queue<T> {
         // handled by GC but for the sake of clarity
         head.next = undefined;
 
+        if (this.length === 0) {
+            this.tail = undefined;
+        }
+
         return head.value;
     }
 
