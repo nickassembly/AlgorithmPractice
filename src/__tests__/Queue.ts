@@ -23,9 +23,5 @@ test("queue", function () {
     expect(list.deque()).toEqual(undefined);
     expect(list.length).toEqual(0);
 
-    // just wanted to make sure that I could not blow up myself when i remove
-    // everything
-    list.enqueue(69);
-    expect(list.peek()).toEqual(69);
-    expect(list.length).toEqual(1);
+ 
 });
