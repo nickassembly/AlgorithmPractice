@@ -19,5 +19,16 @@
         "prettier": "prettier --write ./src",
         "generate": "node ./scripts/generate.js",
         "day": "echo src\\day1"
-    }
+    },
+    "eslintConfig": {
+        "extends": [
+          "react-app",
+          "react-app/jest",
+          "airbnb",
+          "airbnb/hooks",
+          "prettier" 
+        ]
+      }
+    
+
 }
